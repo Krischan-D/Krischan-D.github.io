@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+    <div class="back">
+        <a href="index.html">Go Back</a>
+    </div>
+    <div class="container">
+        <div class="note"><h3>Tap the heart to open!!!</h3></div>
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Alena,</strong>
+                        <img class="dudu" src="images/dudu.gif" alt="">
+                        <br>
+                        <br>
+
+                        <p>
+                            Will you be my Valentine?  
+                        </p>
+                        <div class="ans">
+                        
+                                <input type="radio" name="choice" id="YesRad1">
+                                <label for="">Yes</label>
+                                <input type="radio" name="choice" id="YesRad2">
+                                <label for="">Yes</label>
+                                <input type="radio" name="choice" id="YesRad3">
+                                <label for="">Yes</label>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+
+    <div class="bgclouds">
+        <div class="bgclouds">
+           <img class="smallclouds" src="images/ww.png" alt="">
+        <img class="smallclouds1" src="images/ww.png" alt="">
+        <img class="smallclouds2" src="images/ww.png" alt="">
+        <img class="smallclouds3" src="images/ww.png" alt="">
+        <img class="smallclouds4" src="images/ww.png" alt="">
+        <img class="smallclouds5" src="images/ww.png" alt="">
+        </div>
+    </div>
+
+    <div class="design">
+        <img class="hearts1" src="images/heart1.png" alt="">
+        <img class="hearts2" src="images/heart1.png" alt="">
+        <img class="hearts3" src="images/heart1.png" alt="">
+        <img class="hearts4" src="images/heart1.png" alt="">
+        <img class="hearts5" src="images/heart1.png" alt=""> 
+    </div>
+    <script>
+        const YesRad1 = document.getElementById(`YesRad1`);
+        const YesRad2 = document.getElementById(`YesRad2`);
+        const YesRad3 = document.getElementById(`YesRad3`);
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+
+        YesRad1.onclick = function(){
+            window.alert("Yehey! See you!");
+        }
+        YesRad2.onclick = function(){
+            window.alert("Yehey! See you!");
+        }
+        YesRad3.onclick = function(){
+            window.alert("Yehey! See you!");
+        }
+    </script>
+</body>
+</html>
